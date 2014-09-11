@@ -1,2 +1,35 @@
 HTML is used to establish a page's structure. It also lets us add text, links and images
 CSS is used to control the design and layout of the page.
+
+Heading elements h1 to h6; h1 used to describe the main heading
+<h1> Main Heading </h1>
+
+Paragraphs are described by p elements as <p> I am learing HTML. </p>
+
+<a> is used to create links. It has two elements. First is the href attribute which equals the website you want to link to. Second you get to choose the name in the text that user sees on the page.
+<a href ="https:// www.arsenal.com"> Click here to go to arsenal website </a>
+
+<img> is for adding the image tags. <img src =" http://goo.gl/mbnqBl"> 
+Here the src is the tag which has the address of the image.
+
+<ul> and <li>
+They present the content as lists. A bulleted list us made using a ul element and each item in the list is placed inside the li element.
+<ul>
+	<li> first </li>
+	<li> second </li>
+
+</ul>
+
+<html> and <body>
+Everything inside a webpge is nested inside the html element
+The body element contains the actual content of the web page and everything inside the body will show up in the web browser.
+
+<!DOCTYPE html> is not a HTML file but it ensures that the web page displays consistently when its visited from differernt browsers. It has no closing tag.
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1> Web Development </h1>
+		<p> I am learning the HTML tags </p>
+	</body>
+</html>
