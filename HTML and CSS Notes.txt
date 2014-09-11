@@ -1,0 +1,2 @@
+HTML is used to establish a page's structure. It also lets us add text, links and images
+CSS is used to control the design and layout of the page.
