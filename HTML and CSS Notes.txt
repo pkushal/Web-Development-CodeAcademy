@@ -33,3 +33,127 @@ The body element contains the actual content of the web page and everything insi
 		<p> I am learning the HTML tags </p>
 	</body>
 </html>
+
+<div> </div> element groups othe elements together into sections of web page such as navigation bar, the main body and the footer
+
+<div class = "nav">
+</div>
+The <div> tag defines a division or a section in an HTML document.
+
+The <div> tag is used to group block-elements to format them with CSS.
+
+
+Cascading Style Sheets (CSS):
+
+
+h1 {
+	color:red;
+}
+this will make the h1 elements to be in red color. This code is called the CSS rule. CSS rule contains a selector and property-value pairs. Here h1 is the selector, which selects all the h1 HTML elements on the page. Inside the {} there is property value pair. Color is the property and red is the value.
+
+All the HTML elements can be the CSS selector. Another available selector is the class selector. HTML elements can carry a class attribute. 
+<div class="header">
+	<h2> Heading </h2>
+	<p> Subtile</p>
+</div>
+
+Class can be targeted from the CSS using a dot (.) as 
+
+.header{
+	color: yellow;
+}
+In the above HTML code, this class selector will make the Heading and Subtitle in Yellow since they are grouped inside the div class called header.
+
+Combining Selector:
+We can combine the classes and the element names. The code below selects any p element nested inside the HTML class named header and sets the color to blue.
+.header p{
+	color: blue;
+}
+
+The color attribute only works for 140 colors. www.crockford.com/wrrrld/color.html
+
+To have access to more than 140 colors, we can use RGB values or hexadecimal numbers (0-255) or (00 - ff) with 255 and ff being the brightest.
+
+.jumbotron h1{
+	color: rgb(254, 193,123);
+}
+OR
+.jumbotron h1{
+	color: #9933CC;
+}
+
+
+Font family sets the font of HTML element's text. Three commonly used font-family are
+1. font-family: Arial, Helvetica, sans-serif;
+2. font-family: "Times New Roman", Times, serif;
+3. font-family: "Courier New", Courier, monospace;
+
+.jumbotron h1{
+	color: rgb(254, 193,123);
+	font-family: 'Shift', san-serif;
+}
+
+font-size: set the size of the HTML elements text. It can be measured in pixels, ems ans rems.
+.jumbotron h1{
+	color: rgb(254, 193,123);
+	font-family: 'Shift', san-serif;
+	font-size: 48px;
+}
+
+background-color sets the color for the backgrond of an HTML element
+.jumbotron h1{
+	background-color: #0099cc;
+}
+
+background-image: sets an image as the background of an HTML element
+
+.jumbotron h1{
+	background-image: url('http://goo.gl.ODpi3y');
+}
+
+border property sets the width, style and color of an element's border
+.jumbotron h1{
+	border: 3px solid #cc0000;	
+}
+This will set the border around the h1 element within the jumbotron class to a border of thickness of 3px, solid style and color as #cc0000.
+
+padding property creates space between the content and border of an element on 4 all sides. padding-top, padding-bottom, padding-left, padding-right set the padding on specific sides.
+
+.jumbotron h1{
+	padding: 11px;
+	border: 3px solid #cc0000;	
+}
+
+margin property creates space for multiple HTML elements. The margin is  a transapent area outside the border of an element. Its just like adding a transparent border layer outsise the border but it will shrink (shift) the actual border in all direction. margin-left, margin-right, margin-top and margin-bottom are available to set the margins in each side of HTML element.
+.jumbotron h1{
+	padding: 11px;
+	margin: 2px;
+	border: 3px solid #cc0000;	
+}
+
+margin-right:auto will move the element to the far left of the screen. The margin is on the right and the element is then moved/pushed to the far left.
+To center the element, set margin-left:auto and margin-right: auto
+.jumbotron h1{
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px, dotted, #ffffff;
+}
+
+How to link the HTML file and the CSS file:
+
+<head> and <link>
+
+The head element contains information that the web browser needs to display the page. <head> </head>
+The link element tll the browser where to find the CSS file used to style the page. The href attribute gives the browser the path the CSS file. The rel attribute tel the browser that the file being linked is a CSS file to style the page.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="main.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<h1>Heading</h1>
+		<p>Paragraph</p>
+	</body>
+</html>
