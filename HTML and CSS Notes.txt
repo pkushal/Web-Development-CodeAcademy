@@ -157,3 +157,162 @@ The link element tll the browser where to find the CSS file used to style the pa
 		<p>Paragraph</p>
 	</body>
 </html>
+
+There are also other CSS rules like font-weight: bold, text-transform: uppercase etc
+
+.jumbotron h1{
+	height:500px;
+}
+The height rule will make the size of that div group to 500 pixels.
+
+While adding the links in the head in the html file, the sequence of the link file matters.
+
+
+
+
+
+
+CSS Positioning section:
+CSS can also control where an element sits on a page to create a page layout.
+
+display
+
+CSS treats HTML elements like boxes. A box can be "block" or "inline".
+
+    Block elements display on a new line (e.g., h1, p, ul, li).
+
+    Inline elements display on the same line as their neighboring elements (e.g., img, a)
+
+It's possible to change whether a box is block or inline by using the display property.
+
+
+
+position
+
+The position property is used to move an HTML element to a precise position on the page.
+
+By setting position: relative, you can use the CSS properties top, left, bottom, and right to shift an element away from where it would have normally appeared on the page.
+
+.jumbotron h1 {
+  position: relative;
+  top: 91px;
+  left: 55px;
+}
+
+
+float
+
+The float property moves an element to the far left or far right of the page.
+
+For example, setting float: right pulls an element to the far right side of the page, and the surrounding text wraps around it.
+img {
+float:right;
+}
+
+.learn-more {
+clear:both;
+}
+The clear property turns off the float, so the "Learn More" section returns to its normal flow on the page.
+
+Bootstrap:
+Bootstrap is a collection of prewritten CSS rules used to build web pages faster. Bootstrap provides styles out of the box for several common components on a web page, such as grid layouts, navigation, showcases, and much more.
+
+
+The grid
+
+A grid is a useful way to create page layouts. Rather than create layouts from scratch, HTML elements can be aligned to a grid in different ways to create custom layouts.
+
+Bootstrap comes with a grid that is made up of 12 equal-sized columns. HTML elements are arranged to span different numbers of columns in order to create custom page layouts.
+<div class="row">
+
+  <div class="col-md-6">
+    <h4>Content 1</h4>
+  </div>
+
+  <div class="col-md-6">
+    <h4>Content 2</h4>
+  </div>
+
+</div>
+Bootstrap's grid is made up of 12 equal-sized columns. Each piece of content is aligned to this grid by specifying the number of columns to span. Here each piece of content spans six columns, so it uses the .col-md-6 class. Both columns are wrapped in a .row class to create a horizontal group.
+Also we can do as below to  create uneven partition.
+
+<div class="row">
+
+	<div class="col-md-8">
+		<h4>Content 1</h4>
+	</div>
+
+	<div class="col-md-4">
+		<h4>Content 2</h4>
+	</div>
+
+</div>
+
+
+
+Tabs
+
+Tabs are a common navigation technique that give links to different parts of a site.
+Setting Class=  nav nav-tabs will convert the lists to the tabs
+<ul class="nav nav-tabs ">
+	<li><a href="#">Primary</a></li>
+	<li class="active"><a href="#">Social</a></li>
+	<li><a href="#">Promotions</a></li>
+	<li><a href="#">Updates</a></li>
+</ul>
+
+Setting <li class="active"> will make the tab look active.
+
+
+
+
+
+Pills
+
+Pills are a set of buttons that give links to different parts of a site. Pills are seen in sites like Google's search results page.
+
+Replace nav-tabs to nav-pills to get the look like buttons
+<ul class="nav nav-pills">
+	<li><a href="#">Primary</a></li>
+	<li class="active"><a href="#">Social</a></li>
+	<li><a href="#">Promotions</a></li>
+	<li><a href="#">Updates</a></li>
+</ul>
+
+
+
+
+Jumbotron
+
+Many sites have a large showcase area featuring important content.
+
+The order of the CSS files matter.
+1. The browser first sees shift.css, and makes the Shift font available to use in the page
+2. Next the browser sees bootstrap.css, and applies those styles to the page.
+3. Then the browser sees main.css, and applies those custom styles to the page. The custom styles override the Bootstrap styles.
+
+The order of the CSS files tell the browser that your styles in main.css are more important than the styles in bootstrap.css, so the final page that loads is the customized web page.
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"  rel="stylesheet">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    
+  </head>
+
+  Bootstrap provides the .pull-left class to left-align an element, and the .pull-right class to right-align an element. 
+
+   <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
