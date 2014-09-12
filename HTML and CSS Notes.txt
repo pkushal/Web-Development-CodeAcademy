@@ -6,14 +6,17 @@ Heading elements h1 to h6; h1 used to describe the main heading
 
 Paragraphs are described by p elements as <p> I am learing HTML. </p>
 
-<a> is used to create links. It has two elements. First is the href attribute which equals the website you want to link to. Second you get to choose the name in the text that user sees on the page.
+<a> is used to create links. It has two elements. First is the href attribute which equals 
+the website you want to link to. Second you get to choose the name in the text that user
+ sees on the page.
 <a href ="https:// www.arsenal.com"> Click here to go to arsenal website </a>
 
 <img> is for adding the image tags. <img src =" http://goo.gl/mbnqBl"> 
 Here the src is the tag which has the address of the image.
 
 <ul> and <li>
-They present the content as lists. A bulleted list us made using a ul element and each item in the list is placed inside the li element.
+They present the content as lists. A bulleted list us made using a ul element and each item
+ in the list is placed inside the li element.
 <ul>
 	<li> first </li>
 	<li> second </li>
@@ -22,9 +25,11 @@ They present the content as lists. A bulleted list us made using a ul element an
 
 <html> and <body>
 Everything inside a webpge is nested inside the html element
-The body element contains the actual content of the web page and everything inside the body will show up in the web browser.
+The body element contains the actual content of the web page and everything inside the body
+ will show up in the web browser.
 
-<!DOCTYPE html> is not a HTML file but it ensures that the web page displays consistently when its visited from differernt browsers. It has no closing tag.
+<!DOCTYPE html> is not a HTML file but it ensures that the web page displays consistently 
+when its visited from differernt browsers. It has no closing tag.
 
 <!DOCTYPE html>
 <html>
@@ -34,7 +39,8 @@ The body element contains the actual content of the web page and everything insi
 	</body>
 </html>
 
-<div> </div> element groups othe elements together into sections of web page such as navigation bar, the main body and the footer
+<div> </div> element groups othe elements together into sections of web page such as navigation
+ bar, the main body and the footer
 
 <div class = "nav">
 </div>
@@ -49,9 +55,13 @@ Cascading Style Sheets (CSS):
 h1 {
 	color:red;
 }
-this will make the h1 elements to be in red color. This code is called the CSS rule. CSS rule contains a selector and property-value pairs. Here h1 is the selector, which selects all the h1 HTML elements on the page. Inside the {} there is property value pair. Color is the property and red is the value.
+this will make the h1 elements to be in red color. This code is called the CSS rule. CSS rule 
+contains a selector and property-value pairs. Here h1 is the selector, which selects all the 
+h1 HTML elements on the page. Inside the {} there is property value pair. Color is the property
+ and red is the value.
 
-All the HTML elements can be the CSS selector. Another available selector is the class selector. HTML elements can carry a class attribute. 
+All the HTML elements can be the CSS selector. Another available selector is the class selector.
+ HTML elements can carry a class attribute. 
 <div class="header">
 	<h2> Heading </h2>
 	<p> Subtile</p>
@@ -62,17 +72,20 @@ Class can be targeted from the CSS using a dot (.) as
 .header{
 	color: yellow;
 }
-In the above HTML code, this class selector will make the Heading and Subtitle in Yellow since they are grouped inside the div class called header.
+In the above HTML code, this class selector will make the Heading and Subtitle in Yellow since
+ they are grouped inside the div class called header.
 
 Combining Selector:
-We can combine the classes and the element names. The code below selects any p element nested inside the HTML class named header and sets the color to blue.
+We can combine the classes and the element names. The code below selects any p element nested 
+inside the HTML class named header and sets the color to blue.
 .header p{
 	color: blue;
 }
 
 The color attribute only works for 140 colors. www.crockford.com/wrrrld/color.html
 
-To have access to more than 140 colors, we can use RGB values or hexadecimal numbers (0-255) or (00 - ff) with 255 and ff being the brightest.
+To have access to more than 140 colors, we can use RGB values or hexadecimal numbers (0-255) or
+ (00 - ff) with 255 and ff being the brightest.
 
 .jumbotron h1{
 	color: rgb(254, 193,123);
@@ -115,23 +128,29 @@ border property sets the width, style and color of an element's border
 .jumbotron h1{
 	border: 3px solid #cc0000;	
 }
-This will set the border around the h1 element within the jumbotron class to a border of thickness of 3px, solid style and color as #cc0000.
+This will set the border around the h1 element within the jumbotron class to a border of 
+thickness of 3px, solid style and color as #cc0000.
 
-padding property creates space between the content and border of an element on 4 all sides. padding-top, padding-bottom, padding-left, padding-right set the padding on specific sides.
+padding property creates space between the content and border of an element on 4 all sides.
+ padding-top, padding-bottom, padding-left, padding-right set the padding on specific sides.
 
 .jumbotron h1{
 	padding: 11px;
 	border: 3px solid #cc0000;	
 }
 
-margin property creates space for multiple HTML elements. The margin is  a transapent area outside the border of an element. Its just like adding a transparent border layer outsise the border but it will shrink (shift) the actual border in all direction. margin-left, margin-right, margin-top and margin-bottom are available to set the margins in each side of HTML element.
+margin property creates space for multiple HTML elements. The margin is  a transapent area 
+outside the border of an element. Its just like adding a transparent border layer outsise
+ the border but it will shrink (shift) the actual border in all direction. margin-left, 
+ margin-right, margin-top and margin-bottom are available to set the margins in each side of HTML element.
 .jumbotron h1{
 	padding: 11px;
 	margin: 2px;
 	border: 3px solid #cc0000;	
 }
 
-margin-right:auto will move the element to the far left of the screen. The margin is on the right and the element is then moved/pushed to the far left.
+margin-right:auto will move the element to the far left of the screen. The margin is on
+ the right and the element is then moved/pushed to the far left.
 To center the element, set margin-left:auto and margin-right: auto
 .jumbotron h1{
 	margin-left: auto;
@@ -143,8 +162,11 @@ How to link the HTML file and the CSS file:
 
 <head> and <link>
 
-The head element contains information that the web browser needs to display the page. <head> </head>
-The link element tll the browser where to find the CSS file used to style the page. The href attribute gives the browser the path the CSS file. The rel attribute tel the browser that the file being linked is a CSS file to style the page.
+The head element contains information that the web browser needs to display the page.
+ <head> </head>
+The link element tll the browser where to find the CSS file used to style the page. The 
+href attribute gives the browser the path the CSS file. The rel attribute tel the 
+ that the file being linked is a CSS file to style the page.
 
 <!DOCTYPE html>
 <html>
@@ -191,7 +213,8 @@ position
 
 The position property is used to move an HTML element to a precise position on the page.
 
-By setting position: relative, you can use the CSS properties top, left, bottom, and right to shift an element away from where it would have normally appeared on the page.
+By setting position: relative, you can use the CSS properties top, left, bottom, and right
+ to shift an element away from where it would have normally appeared on the page.
 
 .jumbotron h1 {
   position: relative;
@@ -204,7 +227,8 @@ float
 
 The float property moves an element to the far left or far right of the page.
 
-For example, setting float: right pulls an element to the far right side of the page, and the surrounding text wraps around it.
+For example, setting float: right pulls an element to the far right side of the page, and
+ the surrounding text wraps around it.
 img {
 float:right;
 }
@@ -212,17 +236,22 @@ float:right;
 .learn-more {
 clear:both;
 }
-The clear property turns off the float, so the "Learn More" section returns to its normal flow on the page.
+The clear property turns off the float, so the "Learn More" section returns to its normal 
+flow on the page.
 
 Bootstrap:
-Bootstrap is a collection of prewritten CSS rules used to build web pages faster. Bootstrap provides styles out of the box for several common components on a web page, such as grid layouts, navigation, showcases, and much more.
+Bootstrap is a collection of prewritten CSS rules used to build web pages faster. Bootstrap
+ provides styles out of the box for several common components on a web page, such as grid 
+ layouts, navigation, showcases, and much more.
 
 
 The grid
 
-A grid is a useful way to create page layouts. Rather than create layouts from scratch, HTML elements can be aligned to a grid in different ways to create custom layouts.
+A grid is a useful way to create page layouts. Rather than create layouts from scratch, HTML
+ elements can be aligned to a grid in different ways to create custom layouts.
 
-Bootstrap comes with a grid that is made up of 12 equal-sized columns. HTML elements are arranged to span different numbers of columns in order to create custom page layouts.
+Bootstrap comes with a grid that is made up of 12 equal-sized columns. HTML elements are 
+ to span different numbers of columns in order to create custom page layouts.
 <div class="row">
 
   <div class="col-md-6">
@@ -234,7 +263,10 @@ Bootstrap comes with a grid that is made up of 12 equal-sized columns. HTML elem
   </div>
 
 </div>
-Bootstrap's grid is made up of 12 equal-sized columns. Each piece of content is aligned to this grid by specifying the number of columns to span. Here each piece of content spans six columns, so it uses the .col-md-6 class. Both columns are wrapped in a .row class to create a horizontal group.
+Bootstrap's grid is made up of 12 equal-sized columns. Each piece of content is aligned to this
+ grid by specifying the number of columns to span. Here each piece of content spans six columns,
+  so it uses the .col-md-6 class. Both columns are wrapped in a .row class to create a horizontal
+  group.
 Also we can do as below to  create uneven partition.
 
 <div class="row">
@@ -270,7 +302,8 @@ Setting <li class="active"> will make the tab look active.
 
 Pills
 
-Pills are a set of buttons that give links to different parts of a site. Pills are seen in sites like Google's search results page.
+Pills are a set of buttons that give links to different parts of a site. Pills are seen in sites 
+like Google's search results page.
 
 Replace nav-tabs to nav-pills to get the look like buttons
 <ul class="nav nav-pills">
@@ -290,9 +323,11 @@ Many sites have a large showcase area featuring important content.
 The order of the CSS files matter.
 1. The browser first sees shift.css, and makes the Shift font available to use in the page
 2. Next the browser sees bootstrap.css, and applies those styles to the page.
-3. Then the browser sees main.css, and applies those custom styles to the page. The custom styles override the Bootstrap styles.
+3. Then the browser sees main.css, and applies those custom styles to the page. The custom styles
+ override the Bootstrap styles.
 
-The order of the CSS files tell the browser that your styles in main.css are more important than the styles in bootstrap.css, so the final page that loads is the customized web page.
+The order of the CSS files tell the browser that your styles in main.css are more important than 
+the styles in bootstrap.css, so the final page that loads is the customized web page.
 
   <head>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"  rel="stylesheet">
@@ -301,7 +336,8 @@ The order of the CSS files tell the browser that your styles in main.css are mor
     
   </head>
 
-  Bootstrap provides the .pull-left class to left-align an element, and the .pull-right class to right-align an element. 
+  Bootstrap provides the .pull-left class to left-align an element, and the .pull-right class to 
+  right-align an element. 
 
    <div class="nav">
       <div class="container">
@@ -309,6 +345,7 @@ The order of the CSS files tell the browser that your styles in main.css are mor
           <li><a href="#">Name</a></li>
           <li><a href="#">Browse</a></li>
         </ul>
+
         <ul class="pull-right">
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Log In</a></li>
@@ -316,3 +353,34 @@ The order of the CSS files tell the browser that your styles in main.css are mor
         </ul>
       </div>
     </div>
+
+
+
+    <div class="learn-more">
+	  <div class="container">
+	  
+		<div class= "row">
+
+	      <div class="col-md-4">
+				<h3>Travel</h3>
+				<p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192
+				 countries.</p>
+				<p><a href="#">See how to travel on Airbnb</a></p>
+	      </div>
+
+		  <div class="col-md-4">
+				<h3>Host</h3>
+				<p>Renting out your unused space could pay your bills or fund your next vacation.</p>
+				<p><a href="#">Learn more about hosting</a></p>
+		  </div>
+
+		  <div class="col-md-4">
+				<h3>Trust and Safety</h3>
+				<p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+				<p><a href="#">Learn about trust at Airbnb</a></p>
+		  </div>
+
+	    </div>
+
+	  </div>
+	</div>

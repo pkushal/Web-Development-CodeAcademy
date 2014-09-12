@@ -1,0 +1,72 @@
+
+Introduction
+
+Web pages made with HTML and CSS display static content. They don't respond to user actions like clicking a mouse or typing a key.
+
+JavaScript and jQuery are used to make web pages interactive.
+
+    JavaScript is a programming language used to create web pages that change in response to user actions.
+
+    jQuery is a collection of prewritten JavaScript code that lets us easily create interactive effects on our site.
+
+
+Here's what the web page's HTML looks like.
+
+    To include CSS files in HTML we used the link element.
+
+    Similarly, to include JavaScript files in HTML, we use the script element. The script element tells the browser where to find a JavaScript file. It has an attribute inside the opening <script> tag named src, which has the address of the JavaScript file.
+
+<!doctype html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    ...
+
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+The first script loads in jQuery. The second script loads in app.js. This is where the code for the dropdown menu program lives. The code for the dropdown menu lives in the JavaScript file app.js. 
+
+app.js:
+var main = function() {
+  $('.dropdown-toggle').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+}
+
+$(document).ready(main);
+
+This code is read from top to bottom, and has two parts. The code starts with a JavaScript function called main(). A function is a set of instructions that tells the computer to do something. The code then uses jQuery to run the main() function once the web page has fully loaded.
+
+
+main()
+
+The main() function is made up of three parts.
+
+First, the code selects the <a class="dropdown-toggle">..</a> element.
+
+jQuery uses selectors to target HTML elements. jQuery selectors are based on CSS selectors. Next, the code checks whether this HTML element has been clicked. If it has been clicked, the line of code inside the curly braces will run. If clicked, the dropdown menu will alternate between showing and hiding, termed toggling.
+
+
+$(document).ready()
+
+The $(document).ready() waits for the HTML document to load completely before running the main() function.
+
+This is important because JavaScript should only run after the web page has loaded completely in the browser - otherwise there wouldn't be any HTML elements to add interactivity to.
+
+
+Summary
+
+JavaScript is a programming language used to add interactivity to a web page. jQuery simplifies JavaScript syntax and makes it easier to build interactive web pages that work across multiple browsers.
+
+jQuery enables us to do three main things on a web page:
+
+    Events. Respond to user interactions.
+
+    DOM Manipulation. Modify HTML elements on the page.
+
+    Effects. Add animations.
